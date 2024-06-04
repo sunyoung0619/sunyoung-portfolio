@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treeish Video</title>
+
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper {
+            width: 1280px;
+            margin: 50px auto;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        #wrapper iframe {
+            width: 1280px;
+            height: 720px;
+        }
+
+        .fixed_box {
+            position: fixed;
+            bottom: 40px;
+            right: 30px;
+            width: 40px;
+        }
+
+        .home_btn,
+        .top_btn {
+            display: inline-block;
+            width: 55px;
+            line-height: 55px;
+            background-color: #4a4f22;
+            text-align: center;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            color: #fff;
+            transition: all 0.5s;
+        }
+
+        .fixed_box a:hover {
+            background-color: #727e47;
+        }
+
+        @media (max-width:1320px) {
+            #wrapper {
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+                height: 0;
+                padding-bottom: 56.25%;
+            }
+
+            #wrapper iframe {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aJsu2gbgZRU?si=f_pMGVr2txo5LWvX"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="fixed_box">
+        <a href="../index.html" class="home_btn">
+            Home
+        </a>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
